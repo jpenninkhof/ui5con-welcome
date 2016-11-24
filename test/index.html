@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>OpenUI5</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background-video="images/lens-flare.mp4,images/lens-flare.webm" data-background-video-loop="loop">
+					<h1 style="position: fixed; width: 100%; background-color: rgba(0, 0, 0, 0.6); font-size: 3.5em">Introduction to OpenUI5</h1>
+					<img data-src="images/OpenUI5_logo_only_darkbackground_transparent.png" style="border: 0px; background: none; color: rgb(0, 157, 224); box-shadow: none">
+					<img data-src="images/twan-van-den-broek.jpg" style="position: fixed; top:610px; left: 40px; max-width: 90px; border-radius: 180px;">
+					<h3 style="position: fixed; background-color: rgba(0, 0, 0, 1); width: 345px; padding-left: 10px; text-align: left; top:625px; left: 145px; color: rgb(0, 157, 224);">Twan van den Broek</h3>
+					<h6 style="position: fixed; background-color: rgba(0, 0, 0, 1); width: 345px; padding-left: 10px; text-align: left; top:680px; left: 145px; color: rgb(0, 157, 224);">SAP Nederland B.V.</h6>
+					<img data-src="images/jan-penninkhof.jpg" style="position: fixed; top:610px; left: 520px; max-width: 90px; border-radius: 180px">
+					<h3 style="position: fixed; background-color: rgba(0, 0, 0, 1); width: 265px; padding-left: 10px; text-align: left; top:625px; left: 625px; color: rgb(0, 157, 224)">Jan Penninkhof</h3>
+					<h6 style="position: fixed; background-color: rgba(0, 0, 0, 1); width: 265px; padding-left: 10px; text-align: left; top:680px; left: 625px; color: rgb(0, 157, 224)">PhoQus B.V.</h6>
+					<aside class="notes">
+							<p>Introduce speakers</p>
+							<p>UI5 is a framework for the user-interface of single-page web-applications</p>
+			        <p>Explain how UI5 got its logo</p>
+			    </aside>
+				</section>
+
+				<section data-markdown="presentation.md"
+                 data-separator="^\n\n\n"
+                 data-separator-vertical="^\n\n"
+		 					 	 data-separator-notes="^Note:">
+        </section>
+
+				<section data-background-video="images/bg-qa.mp4,images/bg-qa.webm" data-background-video-loop="loop">
+          <h1 id="questions-">Questions?</h1>
+					<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+					<p><a href="http://www.twitter.com/tbroek">@tbroek</a></p>
+					<p><a href="http://www.twitter.com/jpenninkhof">@jpenninkhof</a></p>
+          <p><a href="http://jpenninkhof.github.io/openui5-at-nextbuild">github.com / jpenninkhof / openui5-at-nextbuild</a></p>
+				</section>
+
+				<section data-markdown="references.md"
+                 data-separator="^\n\n\n"
+                 data-separator-vertical="^\n\n"
+		 					 	 data-separator-notes="^Note:">
+        </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: false,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
